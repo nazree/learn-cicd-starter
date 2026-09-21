@@ -1,4 +1,4 @@
-Gpackage main
+package main
 
 import (
 	"database/sql"
