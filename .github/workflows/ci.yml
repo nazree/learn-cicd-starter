@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Check out code
-	uses: actions/checkout@v6
+        uses: actions/checkout@v6
 
       - name: Install gosec
         run: go install github.com/securego/gosec/v2/cmd/gosec@latest
