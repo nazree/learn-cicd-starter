@@ -22,10 +22,13 @@ jobs:
         run: go test ./... -cover
   
   security:
-    name: security
+    name: Security
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out code
+	uses: actions/checkout@v6
+
       - name: Install gosec
         run: go install github.com/securego/gosec/v2/cmd/gosec@latest
      
